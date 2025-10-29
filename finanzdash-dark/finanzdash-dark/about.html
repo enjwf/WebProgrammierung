@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Über & Doku – FinanzDash</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body class="bg-body">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">FinanzDash</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="stocks.html">Aktien</a></li>
+        <li class="nav-item"><a class="nav-link" href="crypto.html">Krypto</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Über</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-9">
+      <div class="card shadow-sm">
+        <div class="card-body p-4 p-lg-5">
+          <h1 class="mb-3">Über & Dokumentation</h1>
+          <p>Diese Website erfüllt die Aufgaben-Vorgaben:</p>
+          <ul>
+            <li><strong>Navigation mit ≥3 Unterseiten</strong>: Start, Aktien, Krypto, Über.</li>
+            <li><strong>Dokumentation</strong>: Installation & Funktionsbeschreibung (unten).</li>
+            <li><strong>Sauberes Coding</strong>: Modularer Code, Kommentare, getrennte Styles/JS, Framework-Einbindung.</li>
+            <li><strong>Mind. zwei API-Endpoints</strong>: Financial Modeling Prep <code>/search</code>, <code>/quote</code>, <code>/historical-price-full</code>; CoinGecko <code>/market_chart</code>, <code>/markets</code>.</li>
+            <li><strong>Sinnvolle Darstellung</strong>: Karten, Badges, Loader, Charts (Chart.js).</li>
+            <li><strong>Responsive Layout</strong>: Bootstrap 5, mobile-first.</li>
+          </ul>
+          <hr>
+          <h2>Installation</h2>
+          <ol>
+            <li>Ordner in <strong>VS Code</strong> öffnen.</li>
+            <li>Extension <em>Live Server</em> starten und <code>index.html</code> öffnen.</li>
+          </ol>
+          <h2>Funktionen</h2>
+          <ul>
+            <li><strong>Aktien:</strong> Suche mit Autocomplete (FMP <code>/search</code>), Detaildaten (FMP <code>/quote</code>), Verlaufs-Chart (FMP <code>/historical-price-full</code>), Vergleich von bis zu 3 Tickern, Watchlist (LocalStorage).</li>
+            <li><strong>Krypto:</strong> Preis-Chart und Kennzahlen (CoinGecko <code>/market_chart</code>, <code>/markets</code>).</li>
+            <li><strong>Start:</strong> Quick-Search, Beispiel-Widgets (AAPL, BTC) und Watchlist-Übersicht.</li>
+          </ul>
+          <p class="text-secondary small">Rechtlicher Hinweis: Keine Finanzberatung. Daten können ungenau oder verzögert sein. Nur zu Lernzwecken.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="border-top border-secondary mt-5 py-4 bg-black text-secondary">
+  <div class="container small d-flex justify-content-between flex-wrap gap-2">
+    <span>© 2025 FinanzDash – Lernprojekt.</span>
+    <span>Datenquellen: Financial Modeling Prep (Aktien), CoinGecko (Krypto).</span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
