@@ -1,13 +1,24 @@
 # FinanzDash (Dark)
 Modernes Dark-UI, Hauptfokus Aktien, Nebenfokus Krypto. Interaktiv (Watchlist, Vergleich, Autocomplete).
 
-## Datenquellen (aus apipheny.io/free-api Verzeichnis)
-- Financial Modeling Prep (Aktien) – Endpoints: /search, /quote, /historical-price-full – API-Key: demo
-- CoinGecko (Krypto) – Endpoints: /market_chart, /markets – ohne API-Key
+## API-Keys
+key: '9T1WL88HZPR5O6LA', //beide aktuell Stand 29.Oktober
+base: 'https://www.alphavantage.co/query'
+
+
+key: 'R3BLsCRdlEhiulnqQbysv2ALM5rr1e4D' //beide aktuell Stand 29.Oktober
+base: 'https://financialmodelingprep.com/api/v3'
+
 
 ## Start
 1. In VS Code öffnen
-2. Live Server starten → index.html
+2. Live Server starten über index.html
+
+Or
+
+1. In VS Code öffnen
+2. launch.js ausführen
+3. führt in Firefox aus
 
 ## Seiten
 - index.html – Landing, Quick-Search, Watchlist, AAPL & BTC Widgets
