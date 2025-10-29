@@ -1,0 +1,52 @@
+
+:root {
+  --brand: #0d6efd;
+  --bg: #0b0c10;
+  --bg-soft: #121318;
+  --card: #1a1c23;
+  --text: #e6e6e6;
+  --muted: #9aa0a6;
+  color-scheme: dark;
+}
+[data-theme="dark"] .bg-body { background-color: var(--bg) !important; color: var(--text); }
+.bg-black { background-color: #000 !important; }
+.card { border-radius: 1rem; background: var(--card); color: var(--text); }
+.card-glass { background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.hero-grad { background: radial-gradient(1200px 400px at 10% -10%, #2b2f77, transparent), linear-gradient(135deg, #111428 0%, #0b0c10 80%); }
+.btn { border-radius: .7rem; }
+.autocomplete-list {
+  position: absolute; top: 100%; left: 0; right: 0;
+  background: var(--card); border: 1px solid #2b2f77; z-index: 20; border-radius: .5rem; overflow: hidden; display: none;
+}
+.autocomplete-item { padding: .5rem .75rem; cursor: pointer; }
+.autocomplete-item:hover { background: #2a2d36; }
+.loader {
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 3px solid #2a2d36; border-top-color: var(--brand);
+  animation: spin 1s linear infinite; margin-inline: auto;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.badge { border-radius: .5rem; }
+.border-secondary { border-color: #2a2d36 !important; }
+.text-secondary { color: var(--muted) !important; }
+#quickList, #stockList {
+  max-height: 300px;
+  overflow-y: auto; /* Scrollbar bei zu vielen Vorschlägen */
+}
+
+#watchlist {
+  max-height: 500px;
+  overflow-y: auto; /* Scrollbar für Watchlist */
+}
+
+#detail, #compare, #coinInfo {
+  max-height: 600px;
+  overflow-y: none; /* Begrenze Höhe von Detail- und Vergleichsbereichen */
+}
+
+/* Limit canvas heights to avoid extremely large backing stores that can
+   trigger CanvasRenderingContext2D.setTransform errors in some browsers */
+#aaplChart, #btcChart, #cmpChart, #coinChart {
+  max-height: 420px;
+  width: 100%;
+}
